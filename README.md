@@ -3,9 +3,6 @@
 [Live Preview](https://shivangi-verma.github.io/Weather-App-2.0)
 
 A modern and interactive weather web application built using **JavaScript**, **HTML**, and **CSS**. Get real-time weather updates, 4-day forecasts, and other key weather details for any city worldwide.
-
----
-## Screenshots
  
 <img width="1313" height="767" alt="weather_app_2 0_by_shivangi_verma" src="https://github.com/user-attachments/assets/b3988575-c83d-439e-aff3-7ee6faa841eb" />
 
