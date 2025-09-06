@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App 2.0</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Section -->
+      <div class="left">
+        <!-- Search Input -->
+        <div class="input-container">
+          <input id="cityNameInput" type="text" placeholder="Enter City Name" />
+          <svg
+            id="search-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="#000000"
+            viewBox="0 0 256 256"
+            style="cursor: pointer"
+          >
+            <path
+              d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+            ></path>
+          </svg>
+        </div>
+
+        <!-- Weather Icon -->
+        <div class="weather-icon" id="weather-icon">✨</div>
+
+        <!-- Temperature Data -->
+        <div class="temp-data" id="temp-data">
+          <h1 id="temp-in-c">--°C</h1>
+          <h3 id="date-time">Monday, 16:00</h3>
+        </div>
+
+        <!-- Left Footer -->
+        <div class="left-footer">
+          <hr />
+          <p id="country">Country</p>
+          <p id="cloudy">Mostly Cloudy</p>
+          <p id="rain">Rain : 30%</p>
+          <div class="img-container">
+            <img
+              src="https://images.unsplash.com/photo-1546436836-07a91091f160?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="City Image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right">
+        <div class="right-content">
+          <!-- Week Forecast -->
+          <div class="r-top">
+            <h1>Week</h1>
+            <div class="day-card-container">
+              <!-- Repeat Day Card -->
+              <div class="day-card">
+                <p>Sun</p>
+                <div class="day-card-icon">🌞</div>
+                <p>15°-3°</p>
+              </div>
+              <div class="day-card">
+                <p>Mon</p>
+                <div class="day-card-icon">🌤️</div>
+                <p>15°-3°</p>
+              </div>
+              <div class="day-card">
+                <p>Tue</p>
+                <div class="day-card-icon">⛅</div>
+                <p>15°-3°</p>
+              </div>
+              <div class="day-card">
+                <p>Wed</p>
+                <div class="day-card-icon">🌦️</div>
+                <p>15°-3°</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Today's Highlights -->
+          <div class="r-bottom">
+            <h1>Today's Highlight</h1>
+            <div class="rb-grid-container">
+              <div class="rb-tile day-card">
+                <h3 class="rb-tile-heading">Feels Like</h3>
+                <div class="dabba">
+                  <div class="day-card-icon">🌡️</div>
+                  <p id="feels-like">—</p>
+                </div>
+              </div>
+
+              <div class="rb-tile day-card">
+                <h3 class="rb-tile-heading">Wind Status</h3>
+                <div class="dabba">
+                  <div class="day-card-icon">💨</div>
+                  <p id="wind-status">—</p>
+                </div>
+              </div>
+
+              <div class="rb-tile day-card">
+                <h3 class="rb-tile-heading">Sunrise / Sunset</h3>
+                <div class="dabba">
+                  <div class="day-card-icon">🌅</div>
+                  <p id="sunrise-sunset">—</p>
+                </div>
+              </div>
+
+              <div class="rb-tile day-card">
+                <h3 class="rb-tile-heading">Humidity</h3>
+                <div class="dabba">
+                  <div class="day-card-icon">💧</div>
+                  <p id="humidity-tile">—</p>
+                </div>
+              </div>
+
+              <div class="rb-tile day-card">
+                <h3 class="rb-tile-heading">Visibility</h3>
+                <div class="dabba">
+                  <div class="day-card-icon">👀</div>
+                  <p id="visibility">—</p>
+                </div>
+              </div>
+
+              <div class="rb-tile day-card">
+                <h3 class="rb-tile-heading">Pressure</h3>
+                <div class="dabba">
+                  <div class="day-card-icon">🌫️</div>
+                  <p id="pressure">—</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
